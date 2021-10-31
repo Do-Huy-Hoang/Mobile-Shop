@@ -1,0 +1,32 @@
+.body_s {
+    background-image: url("https://anhdepfree.com/wp-content/uploads/2018/12/hinh-nen-may-tinh-4k-cuc-dep-21.jpg");
+    background-size: 100% ;
+    height: 100%;
+    width: auto;
+    .admin {
+        padding-top: 10%;
+    }
+        .admin_form {
+            background-color: white;
+            border: 1px solid;
+            padding-top: 10%;
+            padding: 3%;
+            .admin_login {
+                text-align: center;
+                font-family: "Hina Mincho", serif;
+            }
+              .error{
+                border: 1px;
+                border-radius: 5px;
+                padding: 4px;
+                width: 20%;
+                text-align: center;
+                background-color: #F2DEDE;
+                color: #A94442;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+}
+  }
+}
