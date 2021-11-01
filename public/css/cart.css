@@ -1,0 +1,29 @@
+.minus,
+.plus {
+    width: 34px;
+    height: 38px;
+    text-align: center;
+    border: 1px solid #949697;
+}
+
+.minus {
+    line-height: 32px;
+}
+.minus {
+    border-radius: 3px 0 0 3px;
+}
+.plus {
+    border-radius: 0 3px 3px 0;
+}
+.qty {
+    width: 30px;
+    height: 38px;
+    text-align: center;
+}
+.number-spinner{
+    max-width: 150px;
+}
+
+.content_spp{
+    max-width: 500px;
+}
