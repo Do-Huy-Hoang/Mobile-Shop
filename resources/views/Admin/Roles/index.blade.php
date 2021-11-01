@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{asset('admins\Roles\Roles.css')}}">
 @endsection
 @section('Js')
+    <script src="{{asset('vendor\sweetalert2\sweetalert2.js')}}"></script>
     <script src="{{asset('admins\Roles\Roles.js')}}"></script>
 @endsection
 @section('content')

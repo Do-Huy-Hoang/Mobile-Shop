@@ -64,7 +64,12 @@ Route::get('/search', [
         ]);
         Route::post('/create-order/{id}', [
             'as' => 'create-order',
-            'uses' => 'OrderController@create'
+            'uses' => 'OrderController@CreateOrder'
+        ]);
+        //My order
+        Route::get('/my-order', [
+            'as'=>'my_order',
+            'uses' => 'OrderController@MyOrder'
         ]);
     });
 
@@ -117,11 +122,7 @@ Route::get('/search', [
             'as'=>'password_update',
             'uses' => 'ProfileController@PasswordUpdate'
         ]);
-        //My order
-        Route::get('/my-order', [
-            'as'=>'my_order',
-            'uses' => 'OrderController@MyOrder'
-        ]);
+    //Account
     });
 
 

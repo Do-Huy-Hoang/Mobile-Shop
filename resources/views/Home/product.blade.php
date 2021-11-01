@@ -36,9 +36,9 @@
                                                        href="#"
                                                        data-url="{{route('add_to_cart',['id'=>$productItem->id])}}"
                                                        data-tip="Add to Wishlist"
-                                                       ><i class="fa fa-shopping-cart"></i></a>
+                                                       ><i class="fa fa-shopping-bag"></i></a>
                                                 </li>
-                                                <li><a href="" data-tip="Like"><i class="fas fa-heart"></i></a>
+                                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -72,9 +72,9 @@
                                                    href="#"
                                                    data-url="{{route('add_to_cart',['id'=>$productItem->id])}}"
                                                    data-tip="Add to Wishlist"
-                                                ><i class="fa fa-shopping-cart"></i></a>
+                                                ><i class="fa fa-shopping-bag"></i></a>
                                             </li>
-                                            <li><a href="" data-tip="Like"><i class="fas fa-heart"></i></a>
+                                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
                                             </li>
                                         </ul>
                                     </div>

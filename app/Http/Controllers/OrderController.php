@@ -9,7 +9,7 @@ use App\Orders;
 use App\Product;
 use App\Settings;
 use App\User;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
@@ -66,7 +66,7 @@ class OrderController extends Controller
         }
     }
 
-    public function create($id)
+    public function CreateOrder($id)
     {
         try {
             DB::beginTransaction();
@@ -87,8 +87,16 @@ class OrderController extends Controller
                 ]);
             }
             session()->flush('cart');
+            $category = $this->category::all();
+            $customer = $this->customer::where('user_id', auth()->id())->get();
+            foreach ($customer as $item){
+                $customers = $item;
+            }
+            $orders = $this->orders::latest()->where('customer_id', $customers->id)->get();
+            $ordersItems = $this->order_Items::all();
+            $product = $this->product::all();
             DB::commit();
-            return redirect()->route('my_order');
+            return view('Home.Profile.MyOrder', compact('category','orders','ordersItems','product'));
         } catch (\Exception $exception) {
             DB::rollBack();
             Log::channel('daily')->error('Message: ' . $exception->getMessage() . ' Line :' . $exception->getLine());

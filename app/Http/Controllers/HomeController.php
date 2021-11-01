@@ -4,9 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Category;
 use App\Customer;
+use App\Http\Requests\CustomerRequest;
 use App\Product;
 use App\Sliders;
 use App\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
 
 class HomeController extends Controller
 {
